@@ -92,7 +92,9 @@ def write_run(dataroot: Path, source: str, url: str, raw: bytes, items: list[dic
 
 def main() -> None:
     dataroot = Path(os.environ["DATAROOT"]).expanduser()
-    query = os.environ.get("ARXIV_QUERY", 'all:"vaccine effectiveness"')
+    query = os.environ.get("ARXIV_QUERY")
+    if not query:
+        raise SystemExit('Set ARXIV_QUERY, e.g., ARXIV_QUERY=cat:cs.AI')
     url, raw = fetch(query)
     items = parse(raw)
     run_dir = write_run(dataroot, "arxiv", url, raw, items)
