@@ -53,10 +53,9 @@ DATAROOT is not set. Export DATAROOT or pass --dataroot.
 ## Files consulted (exact)
 - /Users/saendbox/work/tvel-harvester/USAGE.md
 - /Users/saendbox/work/tvel-harvester/RUN_CONTRACT.md
-- /Users/saendbox/work/tvel-harvester/scripts/harvest_arxiv_atom.py
 - /Users/saendbox/work/tvel-harvester/tvel_harvester/run.py
 - /Users/saendbox/work/tvel-harvester/PROJECT_CHARTER.md
 - /Users/saendbox/work/tvel-harvester/.gitignore
 - /Users/saendbox/work/tvel-harvester/pyproject.toml
-- /Users/saendbox/work/tvel-harvester/main.py
+- /Users/saendbox/work/tvel-harvester/scripts/harvest_arxiv_atom.py
 - /Users/saendbox/work/tvel-harvester/README.md
